@@ -34,7 +34,7 @@ class _BMICalculatorState extends State<BMICalculator> {
           iconTheme: const IconThemeData(color: Colors.green),
           title: const Center(
             child:
-                Text('BMI Calculator', style: TextStyle(color: Colors.green)),
+            Text('BMI Calculator', style: TextStyle(color: Colors.green)),
           ),
           backgroundColor: Colors.white,
         ),
@@ -131,7 +131,7 @@ class _BMICalculatorState extends State<BMICalculator> {
                 const SizedBox(
                   height: 30,
                 ),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   height: 60.0,
                   child: OutlinedButton(
@@ -184,14 +184,14 @@ class _BMICalculatorState extends State<BMICalculator> {
   }
 
   void showToast(String Value) => Fluttertoast.showToast(
-        msg: Value,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.grey,
-        textColor: Colors.white,
-        // fontSize: 12.0
-      );
+    msg: Value,
+    toastLength: Toast.LENGTH_SHORT,
+    gravity: ToastGravity.BOTTOM,
+    timeInSecForIosWeb: 1,
+    backgroundColor: Colors.grey,
+    textColor: Colors.white,
+    // fontSize: 12.0
+  );
 
   void MaleFemaleIndex(int index) {
     setState(() {
@@ -203,17 +203,17 @@ class _BMICalculatorState extends State<BMICalculator> {
     if (result <= 18.5) {
       setState(() {
         url1 =
-            "https://www.muscleandfitness.com/nutrition/gain-mass/10-best-foods-help-skinny-guys-gain-muscle/";
+        "https://www.muscleandfitness.com/nutrition/gain-mass/10-best-foods-help-skinny-guys-gain-muscle/";
         url1Name = "What foods should you eat?";
         url2 =
-            "https://www.trifectanutrition.com/blog/how-to-gain-weight-fast-secrets-for-skinny-guys";
+        "https://www.trifectanutrition.com/blog/how-to-gain-weight-fast-secrets-for-skinny-guys";
         url2Name = "Get more advices here";
         url3 =
-            "https://www.nerdfitness.com/blog/a-skinny-guys-guide-to-building-muscle-and-bulking-up/";
+        "https://www.nerdfitness.com/blog/a-skinny-guys-guide-to-building-muscle-and-bulking-up/";
         url3Name = "Bulking Options";
 
         statusText =
-            "Re-balance meals to contain more meat (or soy for vegans/vegetarians), Eat more healthy calories, and Optimise your strength training.";
+        "Re-balance meals to contain more meat (or soy for vegans/vegetarians), Eat more healthy calories, and Optimise your strength training.";
       });
       return 'assets/skinny.png';
     } else if (result >= 18.5 && result <= 22.9) {
@@ -226,7 +226,7 @@ class _BMICalculatorState extends State<BMICalculator> {
         url3Name = "Healthy food to keep eating";
 
         statusText =
-            "You body is Good! Keep eating a variety of nutrient rich foods. Your body actually needs more than 40 different nutrients for good health, and there is not one single source for them.";
+        "You body is Good! Keep eating a variety of nutrient rich foods. Your body actually needs more than 40 different nutrients for good health, and there is not one single source for them.";
       });
 
       return 'assets/normal.png';
@@ -240,7 +240,7 @@ class _BMICalculatorState extends State<BMICalculator> {
         url3Name = "Obesity Causes and Prevention";
 
         statusText =
-            "Start choosing healthier foods (whole grains, fruits and vegetables, healthy fats and protein sources) and beverages.";
+        "Start choosing healthier foods (whole grains, fruits and vegetables, healthy fats and protein sources) and beverages.";
       });
 
       return 'assets/risk.png';
@@ -254,7 +254,7 @@ class _BMICalculatorState extends State<BMICalculator> {
         url3Name = "Healthy Weight Checklist";
 
         statusText =
-            "Achieving and maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction.";
+        "Achieving and maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction.";
       });
 
       return 'assets/overweight.png';
@@ -267,7 +267,7 @@ class _BMICalculatorState extends State<BMICalculator> {
     url3Name = "Tips to Lose that Weight";
 
     statusText =
-        "The most important strategies for preventing obesity are healthy eating behaviors, regular physical activity, and reduced sedentary activity (such as watching television and videotapes, and playing computer games).";
+    "The most important strategies for preventing obesity are healthy eating behaviors, regular physical activity, and reduced sedentary activity (such as watching television and videotapes, and playing computer games).";
     return 'assets/fat.png';
   }
 
@@ -295,18 +295,14 @@ class _BMICalculatorState extends State<BMICalculator> {
           ),
           Row(
             children: [
-              Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+              Expanded(
                 child: Column(
-                  children: [
-                    Image.asset(ResultIndex(result), scale: 2),
-                  ],
-                ),
+                    children: [
+                      Image.asset(ResultIndex(result), scale: 2),
+                    ],
+                  ),
               ),
-              const Expanded(child: SizedBox()),
-
-              Container(
+              Expanded(
                 child: Column(
                   children: [
                     OutlinedButton(
@@ -319,8 +315,13 @@ class _BMICalculatorState extends State<BMICalculator> {
                         _launchUrl(url1);
                       },
                       child: Text(
+                        textAlign: TextAlign.center,
                         "$url1Name",
                       ),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                      height: 10,
                     ),
                     OutlinedButton(
                       style: OutlinedButton.styleFrom(
@@ -331,9 +332,15 @@ class _BMICalculatorState extends State<BMICalculator> {
                         showToast("Click the back Button to go back");
                         _launchUrl(url2);
                       },
+
                       child: Text(
+                        textAlign: TextAlign.center,
                         "$url2Name",
                       ),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                      height: 10,
                     ),
                     OutlinedButton(
                       style: OutlinedButton.styleFrom(
@@ -345,6 +352,7 @@ class _BMICalculatorState extends State<BMICalculator> {
                         _launchUrl(url3);
                       },
                       child: Text(
+                        textAlign: TextAlign.center,
                         "$url3Name",
                       ),
                     ),
