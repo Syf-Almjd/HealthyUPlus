@@ -34,7 +34,7 @@ class _BMICalculatorState extends State<BMICalculator> {
           iconTheme: const IconThemeData(color: Colors.green),
           title: const Center(
             child:
-            Text('BMI Calculator', style: TextStyle(color: Colors.green)),
+                Text('BMI Calculator', style: TextStyle(color: Colors.green)),
           ),
           backgroundColor: Colors.white,
         ),
@@ -184,14 +184,14 @@ class _BMICalculatorState extends State<BMICalculator> {
   }
 
   void showToast(String Value) => Fluttertoast.showToast(
-    msg: Value,
-    toastLength: Toast.LENGTH_SHORT,
-    gravity: ToastGravity.BOTTOM,
-    timeInSecForIosWeb: 1,
-    backgroundColor: Colors.grey,
-    textColor: Colors.white,
-    // fontSize: 12.0
-  );
+        msg: Value,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.grey,
+        textColor: Colors.white,
+        // fontSize: 12.0
+      );
 
   void MaleFemaleIndex(int index) {
     setState(() {
@@ -203,71 +203,81 @@ class _BMICalculatorState extends State<BMICalculator> {
     if (result <= 18.5) {
       setState(() {
         url1 =
-        "https://www.muscleandfitness.com/nutrition/gain-mass/10-best-foods-help-skinny-guys-gain-muscle/";
+            "https://www.muscleandfitness.com/nutrition/gain-mass/10-best-foods-help-skinny-guys-gain-muscle/";
         url1Name = "What foods should you eat?";
         url2 =
-        "https://www.trifectanutrition.com/blog/how-to-gain-weight-fast-secrets-for-skinny-guys";
+            "https://www.trifectanutrition.com/blog/how-to-gain-weight-fast-secrets-for-skinny-guys";
         url2Name = "Get more advices here";
         url3 =
-        "https://www.nerdfitness.com/blog/a-skinny-guys-guide-to-building-muscle-and-bulking-up/";
+            "https://www.nerdfitness.com/blog/a-skinny-guys-guide-to-building-muscle-and-bulking-up/";
         url3Name = "Bulking Options";
 
         statusText =
-        "Re-balance meals to contain more meat (or soy for vegans/vegetarians), Eat more healthy calories, and Optimise your strength training.";
+            "Re-balance meals to contain more meat (or soy for vegans/vegetarians), Eat more healthy calories, and Optimise your strength training.";
       });
       return 'assets/skinny.png';
     } else if (result >= 18.5 && result <= 22.9) {
       setState(() {
         url1 = "https://www.wikihow.com/Be-Healthy";
         url1Name = "Staying healthy";
-        url2 = "https://www.nerdfitness.com/blog/how-to-build-your-own-workout-routine/";
+        url2 =
+            "https://www.nerdfitness.com/blog/how-to-build-your-own-workout-routine/";
         url2Name = "Workout Routine: Plans, Schedules, and Exercises";
-        url3 = "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04";
+        url3 =
+            "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04";
         url3Name = "Healthy food to keep eating";
 
         statusText =
-        "You body is Good! Keep eating a variety of nutrient rich foods. Your body actually needs more than 40 different nutrients for good health, and there is not one single source for them.";
+            "You body is Good! Keep eating a variety of nutrient rich foods. Your body actually needs more than 40 different nutrients for good health, and there is not one single source for them.";
       });
 
       return 'assets/normal.png';
     } else if (result >= 22.9 && result <= 24.9) {
       setState(() {
-        url1 = "https://www.hsph.harvard.edu/obesity-prevention-source/obesity-consequences/health-effects/";
+        url1 =
+            "https://www.hsph.harvard.edu/obesity-prevention-source/obesity-consequences/health-effects/";
         url1Name = "Health Risks";
-        url2 = "https://www.bighealthandfitness.co.uk/easy-workouts-for-overweight-beginners/";
+        url2 =
+            "https://www.bighealthandfitness.co.uk/easy-workouts-for-overweight-beginners/";
         url2Name = "Effective and Easy Workouts";
-        url3 = "https://my.clevelandclinic.org/health/diseases/11209-weight-control-and-obesity";
+        url3 =
+            "https://my.clevelandclinic.org/health/diseases/11209-weight-control-and-obesity";
         url3Name = "Obesity Causes and Prevention";
 
         statusText =
-        "Start choosing healthier foods (whole grains, fruits and vegetables, healthy fats and protein sources) and beverages.";
+            "Start choosing healthier foods (whole grains, fruits and vegetables, healthy fats and protein sources) and beverages.";
       });
 
       return 'assets/risk.png';
     } else if (result >= 24.9 && result <= 29.9) {
       setState(() {
-        url1 = "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight";
+        url1 =
+            "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight";
         url1Name = "Obesity and overweight";
-        url2 = "https://www.healthline.com/health/fitness-exercise/exercise-for-obese-people#How-Much-Exercise-Do-You-Need?";
+        url2 =
+            "https://www.healthline.com/health/fitness-exercise/exercise-for-obese-people#How-Much-Exercise-Do-You-Need?";
         url2Name = "Exercises You Need";
-        url3 = "https://www.hsph.harvard.edu/obesity-prevention-source/diet-lifestyle-to-prevent-obesity/";
+        url3 =
+            "https://www.hsph.harvard.edu/obesity-prevention-source/diet-lifestyle-to-prevent-obesity/";
         url3Name = "Healthy Weight Checklist";
 
         statusText =
-        "Achieving and maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction.";
+            "Achieving and maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction.";
       });
 
       return 'assets/overweight.png';
     }
-    url1 = "https://www.heart.org/en/healthy-living/healthy-eating/losing-weight/extreme-obesity-and-what-you-can-do";
+    url1 =
+        "https://www.heart.org/en/healthy-living/healthy-eating/losing-weight/extreme-obesity-and-what-you-can-do";
     url1Name = "What You Can Do";
     url2 = "https://www.healthline.com/health/weight-loss/obesity";
     url2Name = "Causes of Obesity";
-    url3 = "https://www.webmd.com/diet/obesity/ss/slideshow-obesity-weight-loss-tips";
+    url3 =
+        "https://www.webmd.com/diet/obesity/ss/slideshow-obesity-weight-loss-tips";
     url3Name = "Tips to Lose that Weight";
 
     statusText =
-    "The most important strategies for preventing obesity are healthy eating behaviors, regular physical activity, and reduced sedentary activity (such as watching television and videotapes, and playing computer games).";
+        "The most important strategies for preventing obesity are healthy eating behaviors, regular physical activity, and reduced sedentary activity (such as watching television and videotapes, and playing computer games).";
     return 'assets/fat.png';
   }
 
@@ -297,10 +307,10 @@ class _BMICalculatorState extends State<BMICalculator> {
             children: [
               Expanded(
                 child: Column(
-                    children: [
-                      Image.asset(ResultIndex(result), scale: 2),
-                    ],
-                  ),
+                  children: [
+                    Image.asset(ResultIndex(result), scale: 2),
+                  ],
+                ),
               ),
               Expanded(
                 child: Column(
@@ -332,7 +342,6 @@ class _BMICalculatorState extends State<BMICalculator> {
                         showToast("Click the back Button to go back");
                         _launchUrl(url2);
                       },
-
                       child: Text(
                         textAlign: TextAlign.center,
                         "$url2Name",
@@ -379,10 +388,15 @@ class _BMICalculatorState extends State<BMICalculator> {
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 12.0),
         height: 80,
-        child: FlatButton(
-            color: indexMaleFemale == index ? color : Colors.grey[200],
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0)),
+        child: TextButton(
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(
+                  indexMaleFemale == index ? color : Colors.grey[200],
+                ),
+                shape: MaterialStatePropertyAll(
+                  RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0)),
+                )),
             onPressed: () {
               MaleFemaleIndex(index);
             },

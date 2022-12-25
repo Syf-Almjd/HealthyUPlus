@@ -1,6 +1,7 @@
 import 'package:bmihealth_malaysia/MainPages/BMICalculator.dart';
 import 'package:bmihealth_malaysia/MainPages/home.dart';
 import 'package:bmihealth_malaysia/MainPages/profile.dart';
+import 'package:bmihealth_malaysia/Pages/healthy.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -30,7 +31,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static final List<Widget> _widgetOptions = <Widget>[
     home(),
     BMICalculator(),
-    profile(),
+    healthy(),
   ];
 
   @override

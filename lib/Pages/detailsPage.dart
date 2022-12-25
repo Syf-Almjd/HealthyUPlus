@@ -28,7 +28,7 @@ class _DetailsPageState extends State<DetailsPage> {
           ),
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          title: Text('Details',
+          title: const Text('Details',
               style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 18.0,
@@ -51,7 +51,7 @@ class _DetailsPageState extends State<DetailsPage> {
             Positioned(
                 top: 75.0,
                 child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(45.0),
                           topRight: Radius.circular(45.0),
