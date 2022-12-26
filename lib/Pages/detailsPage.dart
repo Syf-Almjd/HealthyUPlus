@@ -157,9 +157,9 @@ class _DetailsPageState extends State<DetailsPage> {
                             SizedBox(width: 10.0),
                             _buildInfoCard('Energy', widget.dataCal, 'Calories'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Equivalence To bowls of rice', widget.dataRice, 'Bowl of rice'),
+                            _buildInfoCard('Equivalence to bowls of rice', widget.dataRice, 'Bowl of rice'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('AVAIL', 'NO', 'AV')
+                            _buildInfoCard('Type', 'Type', 'AV')
                           ],
                         )),
                     SizedBox(height: 20.0),

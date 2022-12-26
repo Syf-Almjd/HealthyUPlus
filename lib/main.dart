@@ -1,10 +1,13 @@
 import 'package:bmihealth_malaysia/MainPages/BMICalculator.dart';
 import 'package:bmihealth_malaysia/MainPages/home.dart';
 import 'package:bmihealth_malaysia/Pages/healthy.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -62,6 +65,29 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         selectedItemColor: Colors.green,
         onTap: (int index) {
           setState(() {
+            FirebaseFirestore.instance
+                .collection('data')
+                .add({'text': 'data added through app'});
+            StreamBuilder(
+              stream: FirebaseFirestore.instance.collection('data').snapshots(),
+              builder: (BuildContext context,
+                  AsyncSnapshot<QuerySnapshot> snapshot) {
+                if (!snapshot.hasData) {
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+
+                return ListView(
+                  children: snapshot.data!.docs.map((document) {
+                    return Container(
+                      child: Center(child: Text(document['text'])),
+                    );
+                  }).toList(),
+                );
+              },
+            );
+
             _selectedIndex = index;
           });
         },

@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "499351471141",
-    "project_id": "bmihealth-malaysia-44ff1",
-    "storage_bucket": "bmihealth-malaysia-44ff1.appspot.com"
+    "project_number": "440095033676",
+    "project_id": "bmimalaysia-health",
+    "storage_bucket": "bmimalaysia-health.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:499351471141:android:1f23f3e4e73ec712662bcc",
+        "mobilesdk_app_id": "1:440095033676:android:efe1b233ad0abb4462a7e9",
         "android_client_info": {
           "package_name": "com.mjd.bmihealth_malaysia"
         }
       },
       "oauth_client": [
         {
-          "client_id": "499351471141-7c3scp9dpf9ugh176n4kh5jo1fnpg4gl.apps.googleusercontent.com",
+          "client_id": "440095033676-q729b5ompp9fev2a4ramuk6n9bsfa89m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mjd.bmihealth_malaysia",
+            "certificate_hash": "cd3cc14561af31c7d1f0f5b68d5420b7220af73f"
+          }
+        },
+        {
+          "client_id": "440095033676-uf81mt7qkhda7v1ht4buh0sanrv6n1da.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDmh4K-Cnb-2KBYQX5bGQRp-2iUUO3rf4Q"
+          "current_key": "AIzaSyAf9YRL61_80CYGSgN_VUlLESiXUJr0ItA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "499351471141-7c3scp9dpf9ugh176n4kh5jo1fnpg4gl.apps.googleusercontent.com",
+              "client_id": "440095033676-uf81mt7qkhda7v1ht4buh0sanrv6n1da.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
