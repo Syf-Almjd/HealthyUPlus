@@ -1,13 +1,15 @@
 import 'package:bmihealth_malaysia/MainPages/BMICalculator.dart';
 import 'package:bmihealth_malaysia/MainPages/home.dart';
-import 'package:bmihealth_malaysia/MainPages/profile.dart';
 import 'package:bmihealth_malaysia/Pages/healthy.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+
+Future<void> main() async {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

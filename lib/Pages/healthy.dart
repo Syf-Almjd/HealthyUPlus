@@ -10,9 +10,7 @@ class healthy extends StatelessWidget {
       home: Scaffold(
         body: Center(
             child: Text(
-
                 "healthy", style: Theme.of(context).textTheme.overline,
-
             ),
         ),
       ),

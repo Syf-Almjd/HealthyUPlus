@@ -1,12 +1,11 @@
 import 'dart:core';
-
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class BMICalculator extends StatefulWidget {
-  const BMICalculator({super.key});
 
+class BMICalculator extends StatefulWidget {
+   BMICalculator({super.key});
   @override
   State<BMICalculator> createState() => _BMICalculatorState();
 }

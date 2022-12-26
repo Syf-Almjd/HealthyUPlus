@@ -4,8 +4,13 @@ class DetailsPage extends StatefulWidget {
   final heroTag;
   final foodName;
   final foodPrice;
+  final foodType;
+  final dataRice;
+  final dataCal;
+  final dataAmnt;
+  final dataAmntType;
 
-  DetailsPage({this.heroTag, this.foodName, this.foodPrice});
+  DetailsPage({this.heroTag, this.foodName, this.foodPrice, this.foodType, this.dataRice, this.dataCal ,this.dataAmnt ,this.dataAmntType});
 
   @override
   _DetailsPageState createState() => _DetailsPageState();
@@ -17,7 +22,7 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFF7A9BEE),
+        backgroundColor: Color(0xFF39BF21),
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {
@@ -34,13 +39,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   fontSize: 18.0,
                   color: Colors.white)),
           centerTitle: true,
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.more_horiz),
-              onPressed: () {},
-              color: Colors.white,
-            )
-          ],
+
         ),
         body: ListView(children: [
           Stack(children: [
@@ -66,9 +65,11 @@ class _DetailsPageState extends State<DetailsPage> {
                     tag: widget.heroTag,
                     child: Container(
                         decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(widget.heroTag),
-                                fit: BoxFit.cover)),
+                          borderRadius: BorderRadius.circular(100), //<-- SEE HERE
+                          image: DecorationImage(
+                                image: NetworkImage(widget.heroTag),
+                                fit: BoxFit.fill),
+                        ),
                         height: 200.0,
                         width: 200.0))),
             Positioned(
@@ -98,7 +99,7 @@ class _DetailsPageState extends State<DetailsPage> {
                           height: 40.0,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(17.0),
-                              color: Color(0xFF7A9BEE)),
+                              color: Color(0xFF39BF21)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
@@ -109,7 +110,7 @@ class _DetailsPageState extends State<DetailsPage> {
                                   width: 25.0,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(7.0),
-                                      color: Color(0xFF7A9BEE)),
+                                      color: Color(0xFF39BF21)),
                                   child: Center(
                                     child: Icon(
                                       Icons.remove,
@@ -119,7 +120,7 @@ class _DetailsPageState extends State<DetailsPage> {
                                   ),
                                 ),
                               ),
-                              Text('2',
+                              Text(widget.foodType,
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontFamily: 'Montserrat',
@@ -135,7 +136,7 @@ class _DetailsPageState extends State<DetailsPage> {
                                   child: Center(
                                     child: Icon(
                                       Icons.add,
-                                      color: Color(0xFF7A9BEE),
+                                      color: Color(0xFF39BF21),
                                       size: 20.0,
                                     ),
                                   ),
@@ -152,33 +153,32 @@ class _DetailsPageState extends State<DetailsPage> {
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: <Widget>[
-                            _buildInfoCard('WEIGHT', '300', 'G'),
+                            _buildInfoCard('Amount', widget.dataAmnt, widget.dataAmntType),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('CALORIES', '267', 'CAL'),
+                            _buildInfoCard('Energy', widget.dataCal, 'Calories'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('VITAMINS', 'A, B6', 'VIT'),
+                            _buildInfoCard('Equivalence To bowls of rice', widget.dataRice, 'Bowl of rice'),
                             SizedBox(width: 10.0),
                             _buildInfoCard('AVAIL', 'NO', 'AV')
                           ],
-                        )
-                    ),
+                        )),
                     SizedBox(height: 20.0),
                     Padding(
-                      padding: EdgeInsets.only(bottom:5.0),
+                      padding: EdgeInsets.only(bottom: 5.0),
                       child: Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0), bottomLeft: Radius.circular(25.0), bottomRight: Radius.circular(25.0)),
-                            color: Colors.black
-                        ),
+                        decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(10.0),
+                                topRight: Radius.circular(10.0),
+                                bottomLeft: Radius.circular(25.0),
+                                bottomRight: Radius.circular(25.0)),
+                            color: Colors.black),
                         height: 50.0,
-                        child: Center(
-                          child: Text(
-                              '\$52.00',
+                        child: const Center(
+                          child: Text('\$52.00',
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'Montserrat'
-                              )
-                          ),
+                                  fontFamily: 'Montserrat')),
                         ),
                       ),
                     )
@@ -198,15 +198,14 @@ class _DetailsPageState extends State<DetailsPage> {
             curve: Curves.easeIn,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
-              color: cardTitle == selectedCard ? Color(0xFF7A9BEE) : Colors.white,
+              color:
+                  cardTitle == selectedCard ? Color(0xFF39BF21) : Colors.white,
               border: Border.all(
-                  color: cardTitle == selectedCard ?
-                  Colors.transparent :
-                  Colors.grey.withOpacity(0.3),
+                  color: cardTitle == selectedCard
+                      ? Colors.transparent
+                      : Colors.grey.withOpacity(0.3),
                   style: BorderStyle.solid,
-                  width: 0.75
-              ),
-
+                  width: 0.75),
             ),
             height: 100.0,
             width: 100.0,
@@ -220,8 +219,9 @@ class _DetailsPageState extends State<DetailsPage> {
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 12.0,
-                          color:
-                          cardTitle == selectedCard ? Colors.white : Colors.grey.withOpacity(0.7),
+                          color: cardTitle == selectedCard
+                              ? Colors.white
+                              : Colors.grey.withOpacity(0.7),
                         )),
                   ),
                   Padding(
@@ -248,10 +248,7 @@ class _DetailsPageState extends State<DetailsPage> {
                       ],
                     ),
                   )
-                ]
-            )
-        )
-    );
+                ])));
   }
 
   selectCard(cardTitle) {

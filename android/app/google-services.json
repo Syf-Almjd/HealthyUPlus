@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "795804681706",
-    "project_id": "bmihealth-malaysi",
-    "storage_bucket": "bmihealth-malaysi.appspot.com"
+    "project_number": "499351471141",
+    "project_id": "bmihealth-malaysia-44ff1",
+    "storage_bucket": "bmihealth-malaysia-44ff1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:795804681706:android:a1b6bdc25551cbe908de93",
+        "mobilesdk_app_id": "1:499351471141:android:1f23f3e4e73ec712662bcc",
         "android_client_info": {
           "package_name": "com.mjd.bmihealth_malaysia"
         }
       },
       "oauth_client": [
         {
-          "client_id": "795804681706-lkeb60m9tq8mkjkks0063bh7l01ins79.apps.googleusercontent.com",
+          "client_id": "499351471141-7c3scp9dpf9ugh176n4kh5jo1fnpg4gl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBMGVLpamB23EPweNLWEIMlWQGjXrQ4HXQ"
+          "current_key": "AIzaSyDmh4K-Cnb-2KBYQX5bGQRp-2iUUO3rf4Q"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "795804681706-lkeb60m9tq8mkjkks0063bh7l01ins79.apps.googleusercontent.com",
+              "client_id": "499351471141-7c3scp9dpf9ugh176n4kh5jo1fnpg4gl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
