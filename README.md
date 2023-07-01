@@ -1,4 +1,6 @@
-![image](https://github.com/Syf-Almjd/bmihealth_Malaysia/assets/70374999/bfa46618-2ed7-487a-bc57-b0632834f86f) I.	Executive summary
+![image](https://github.com/Syf-Almjd/bmihealth_Malaysia/assets/70374999/bfa46618-2ed7-487a-bc57-b0632834f86f) 
+
+I.	Executive summary
 i. Brief overview of the plan
 HealthyU+ is a nutrition mobile app that aims to empower users in their journey towards a healthier lifestyle. It offers personalized meal plans, tracking tools, and expert guidance. Through targeted marketing, we aim to raise awareness, drive user acquisition, enhance engagement, establish credibility, and foster user loyalty.
 ii. The key points main objectives of the marketing strategy
@@ -192,7 +194,7 @@ Radio	1	 $50	$50
 Online	3	$300	$300	
 Local Marketing			$200	
 Newspapers	15	$200	$200	
-Public Relations			$700	
+Public Relations		$700	
 Events	2	$500	$500	
 Webinars	4	$200	$200	
 Social Media			$350	
@@ -214,19 +216,6 @@ No.	Action Plan	Respons-ible Person	Team/Desig-nation	Status	Target Completion D
 7	System Configura-tion	Hilal Abid	Configuratio-n manager	Compl-eted	13-May-2023	10-May-2023	14-May-2023	 
 
 
- 
-iii Team Roles And Responsibilities
-
-Positions	Responsibilities	Name
-Engineer manager	Managing the activities of the team	Hazza Willys Chaezar Fitar Ruminto
-Software Engineer	Designing and maintaining the software system	SaifAlmajd M. H. Almassri
-IT Support	DB Back Up	Ebtisam Abdalgadir Osman Mohamed
-IT Support	Analyze System	Abdelrahman Salih Ibrahim Mohamed
-Business Developer	Spot and research potential clients	Malaz Hamed Jaber Hamed
-Developer	Prepare the environment	Sahrul Gunawan
-Configuration Manager	System configuration	Hilal Abid
-
-
 
 
 
@@ -243,9 +232,4 @@ III. Key takeaways
 ●	Expert Guidance 
 ●	Comprehensive Database 
 ●	Convenience and Accessibility 
-References
 
-(NUP Malaysia, 2011 )
-
-(Mansor, M., & Harun, N. Z. (2014). Health issues and awareness, and the significant of green space for health promotion in Malaysia. Procedia-Social and Behavioral Sciences, 153, 209-220). 
- 
