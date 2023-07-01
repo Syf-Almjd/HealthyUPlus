@@ -1,6 +1,4 @@
-![image](https://github.com/Syf-Almjd/bmihealth_Malaysia/assets/70374999/bfa46618-2ed7-487a-bc57-b0632834f86f)
-
-I.	Executive summary
+![image](https://github.com/Syf-Almjd/bmihealth_Malaysia/assets/70374999/bfa46618-2ed7-487a-bc57-b0632834f86f) I.	Executive summary
 i. Brief overview of the plan
 HealthyU+ is a nutrition mobile app that aims to empower users in their journey towards a healthier lifestyle. It offers personalized meal plans, tracking tools, and expert guidance. Through targeted marketing, we aim to raise awareness, drive user acquisition, enhance engagement, establish credibility, and foster user loyalty.
 ii. The key points main objectives of the marketing strategy
@@ -146,7 +144,8 @@ Attractive visuals: the app provides high quality images, videos and infographic
 ●	Labeling:
 -	Labels : use  clear and informative labels that include nutrition , supplements and vitamin products with all relative information such as its ingredients , recommendations from the previous users as well as any potential allergens.
 -	Certifications of products : the app provides the relative certifications , such as organic and gluten free to build trust and reassurance to the consumer health.
--	
+
+
 ![image](https://github.com/Syf-Almjd/bmihealth_Malaysia/assets/70374999/b024b4ef-f29c-4415-9f12-55dc63fd01ce)
 
 II. Positioning and differentiation strategy
@@ -181,6 +180,9 @@ No.	Type	Promotional strategy
  
 Implementation Plan
 I. Marketing budget allocation
+
+
+
  ![image](https://github.com/Syf-Almjd/bmihealth_Malaysia/assets/70374999/7a60308c-56a3-4849-8af7-36fa3ec15c30)
 
 
